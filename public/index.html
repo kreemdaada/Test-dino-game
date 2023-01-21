@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DinoKlick</title>
+  </head>
+  <body>
+    <div class="game">
+      <div id="dino"></div>
+      <div id="cactus"></div>
+    </div>
+    <div id="game-over-modal" style="display: none">
+      <form action="/submit" id="game-over-form" method="post">
+        <div class="question">
+          <p>What is the capital of France?</p>
+          <select name="question1">
+            <option value="Paris">Paris</option>
+            <option value="London">London</option>
+            <option value="Berlin">Berlin</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>What is the highest mountain in the world?</p>
+          <select name="question2">
+            <option value="Everest">Everest</option>
+            <option value="K2">K2</option>
+            <option value="Kangchenjunga">Kangchenjunga</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>What is the largest ocean in the world?</p>
+          <select name="question3">
+            <option value="Atlantic">Atlantic</option>
+            <option value="Pacific">Pacific</option>
+            <option value="Indian">Indian</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
